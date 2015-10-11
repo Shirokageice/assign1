@@ -1,4 +1,3 @@
-
 PImage bg1Img;
 PImage bg2Img;
 PImage enemyImg;
@@ -29,9 +28,11 @@ void draw() {
   x +=3;
   x %=640;
   k +=1;
-  k %=640;
+  k %=1280;
+  image(bg2Img,k+640,0);
   image(bg1Img,k,0);
   image(bg2Img,k-640,0);
+  image(bg1Img,k-1280,0);
   image(enemyImg,x,y+30);
   image(fighterImg,589,z+30);
   image(treasureImg,d,h+30);
