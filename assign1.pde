@@ -20,7 +20,7 @@ void setup () {
   w =floor(random(200));
   h =floor(random(389));
   d =floor(random(599));
-  k =0;  
+  k =0; 
 }
 
 void draw() {
